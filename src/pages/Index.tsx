@@ -1,13 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import LoginPage from "@/components/LoginPage";
+import Dashboard from "@/components/Dashboard";
 
 const Index = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userEnrollment, setUserEnrollment] = useState("");
+  const [userRole, setUserRole] = useState("");
+
+  const handleLogin = (enrollmentNo: string, role: string) => {
+    setUserEnrollment(enrollmentNo);
+    setUserRole(role);
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setUserEnrollment("");
+    setUserRole("");
+  };
+
+  if (!isLoggedIn) {
+    return <LoginPage onLogin={handleLogin} />;
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Dashboard 
+      enrollmentNo={userEnrollment} 
+      role={userRole} 
+      onLogout={handleLogout} 
+    />
   );
 };
 

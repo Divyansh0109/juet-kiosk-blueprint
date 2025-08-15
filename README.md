@@ -4,7 +4,6 @@ A modern, responsive academic portal for **Jaypee University of Engineering & Te
 
 ![JUET WebKiosk Demo](https://img.shields.io/badge/Status-Live-brightgreen) ![React](https://img.shields.io/badge/React-18.3.1-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-Latest-blue) ![Tailwind](https://img.shields.io/badge/TailwindCSS-3.x-cyan)
 
-## ✨ Features
 
 ### 🔐 **Secure Authentication**
 - Multi-role login system (Student/Parent/Faculty)
@@ -57,11 +56,6 @@ A modern, responsive academic portal for **Jaypee University of Engineering & Te
    npm run dev
    ```
 
-4. **Open in browser**
-   ```
-   http://localhost:5173
-   ```
-
 ## 🛠️ Technology Stack
 
 - **Frontend Framework**: React 18.3.1 with TypeScript
@@ -71,7 +65,6 @@ A modern, responsive academic portal for **Jaypee University of Engineering & Te
 - **Icons**: Lucide React
 - **Routing**: React Router DOM
 - **State Management**: TanStack Query
-- **Backend**: Supabase (Database, Authentication, Storage)
 
 ## 📁 Project Structure
 
@@ -125,12 +118,6 @@ npm run lint         # Run ESLint
 
 The project uses Supabase for backend services. No additional environment configuration is required as Supabase is pre-configured.
 
-## 🚀 Deployment
-
-```bash
-npm run build
-# Deploy the 'dist' folder to your hosting provider
-```
 
 ## 🎨 Design System
 
@@ -140,14 +127,6 @@ The application uses a comprehensive design system with:
 - **Typography**: Inter font family
 - **Components**: Consistent spacing, shadows, and animations
 - **Responsive**: Mobile-first design approach
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📝 License
 

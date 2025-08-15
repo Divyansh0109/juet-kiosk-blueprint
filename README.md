@@ -127,12 +127,6 @@ The project uses Supabase for backend services. No additional environment config
 
 ## 🚀 Deployment
 
-### Via Lovable (Recommended)
-1. Open your [Lovable Project](https://lovable.dev/projects/20449fad-e46a-44de-908b-45d07ba29695)
-2. Click **"Publish"** in the top right
-3. Your app will be live instantly
-
-### Manual Deployment
 ```bash
 npm run build
 # Deploy the 'dist' folder to your hosting provider
@@ -159,13 +153,6 @@ The application uses a comprehensive design system with:
 
 This project is developed for **Jaypee University of Engineering & Technology** and follows the university's guidelines for academic software.
 
-## 📞 Support
-
-For technical support or feature requests:
-- Create an issue in this repository
-- Contact the development team
-- Check the [Lovable Documentation](https://docs.lovable.dev/)
-
 ---
 
-**Built with ❤️ for JUET students and faculty**
+**Built for JUET students and faculty**
